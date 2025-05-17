@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+  db:
+    image: mysql:8.2.0
+    volumes:
+      - dbbase:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: bud1234
+      MYSQL_DATABASE: budget_db
+volumes:
+  dbbase:
