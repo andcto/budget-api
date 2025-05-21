@@ -14,7 +14,7 @@ public class Category {
 
     @Column(nullable = false)
     private String name;
-//@Todo modificar para o tipo enum Type
+
     private String type;
 }
 
